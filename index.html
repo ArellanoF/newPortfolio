@@ -98,36 +98,63 @@
                         <h2>Works done by me</h2>
                       </div>
 
-                      <div class="owl-carousel owl-theme">
+                      <div class="owl-carousel owl-theme" id="mblhide">
                         <div class="item">
                           <div class="project-info">
-                            <a href="https://github.com/ArellanoF/KokoroMusic" target="_blank"><img src="images/project/KokoroProject.png" class="img-fluid" alt="project image"></a>
+                            <!-- <a href="https://github.com/ArellanoF/KokoroMusic" target="_blank"><img src="images/project/KokoroProject.png" class="img-fluid" alt="project image"></a> -->
+                            <a href="#" data-toggle="modal" data-target="#largeModal1"><img src="images/project/KokoroProject.png" class="img-fluid"  alt="project image"></a>
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <a href="https://github.com/ArellanoF/Tic-Tac-Toe" target="_blank"><img src="images/project/TicTacToe.png" class="img-fluid" alt="project image"></a>
+                            <!-- <a href="https://github.com/ArellanoF/Tic-Tac-Toe" target="_blank"><img src="images/project/TicTacToe.png" class="img-fluid" alt="project image"></a> -->
+                            <a href="#" data-toggle="modal" data-target="#largeModal2"><img src="images/project/TicTacToe.png" class="img-fluid" alt="project image"></a>
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <a href="https://github.com/ArellanoF/Word-Search" target="_blank"><img src="images/project/WordSearch.png" class="img-fluid" alt="project image"></a>
+                            <!-- <a href="https://github.com/ArellanoF/Word-Search" target="_blank"><img src="images/project/WordSearch.png" class="img-fluid" alt="project image"></a> -->
+                            <a href="#" data-toggle="modal" data-target="#largeModal3"><img src="images/project/WordSearch.png" class="img-fluid" alt="project image"></a>
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <a href="https://github.com/ArellanoF/SchoolManagementApp-Laravel" target="_blank"><img src="images/project/LaravelSchool.png" class="img-fluid" alt="project image"></a>
+                            <!-- <a href="https://github.com/ArellanoF/SchoolManagementApp-Laravel" target="_blank"><img src="images/project/LaravelSchool.png" class="img-fluid" alt="project image"></a> -->
+                            <a href="#" data-toggle="modal" data-target="#largeModal4"><img src="images/project/LaravelSchool.png" class="img-fluid" alt="project image"></a>
                           </div>
                         </div>
-<!-- 
+                      </div>
+                      <div class="owl-carousel owl-theme" id="mblshow">
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
+                            <!-- <a href="https://github.com/ArellanoF/KokoroMusic" target="_blank"><img src="images/project/KokoroProject.png" class="img-fluid" alt="project image"></a> -->
+                            <a href="#" data-toggle="modal" data-target="#largeModal1"><img src="images/project/KokoroProjectmbl.png" class="img-fluid"  alt="project image"></a>
                           </div>
-                        </div> -->
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <!-- <a href="https://github.com/ArellanoF/Tic-Tac-Toe" target="_blank"><img src="images/project/TicTacToe.png" class="img-fluid" alt="project image"></a> -->
+                            <a href="#" data-toggle="modal" data-target="#largeModal2"><img src="images/project/TicTacToembl.png" class="img-fluid" alt="project image"></a>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <!-- <a href="https://github.com/ArellanoF/Word-Search" target="_blank"><img src="images/project/WordSearch.png" class="img-fluid" alt="project image"></a> -->
+                            <a href="#" data-toggle="modal" data-target="#largeModal3"><img src="images/project/WordSearchmbl.png" class="img-fluid" alt="project image"></a>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <!-- <a href="https://github.com/ArellanoF/SchoolManagementApp-Laravel" target="_blank"><img src="images/project/LaravelSchool.png" class="img-fluid" alt="project image"></a> -->
+                            <a href="#" data-toggle="modal" data-target="#largeModal4"><img src="images/project/LaravelSchoolmbl.png" class="img-fluid" alt="project image"></a>
+                          </div>
+                        </div>
                       </div>
 
                   </div>
@@ -293,6 +320,97 @@
                </div>
           </div>
      </footer>
+
+<!-- Modal -->
+
+<!-- large modal -->
+<div class="modal fade" id="largeModal1" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="padding-right:0px !important">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">Kokoro Music</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>KokoroMusic is a music player application. It allows user to play, pause the audio track. Also, user can play next or previous track. In addition to that, user can change the current playing time using a seekbar.</p>
+        <h4>Running the prototype</h4>
+        <ul>
+          <li>git clone this repository</li>
+          <li>cd kokoroMusic/application and npm install</li>
+          <li>run npm install</li>
+          <li>open browser on http://localhost:4200/</li>
+        </ul><br>
+        <h4>Built With</h4>
+        <p>Angular 9</p>
+        <a href="https://github.com/ArellanoF/KokoroMusic"><img src="/images/project/github.png" alt="github" width="100"></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3>Modal Body</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal3" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3>Modal Body</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal4" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3>Modal Body</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>

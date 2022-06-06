@@ -1,63 +1,144 @@
-.img-navbar-brand{
-    width:10%;
+body {
+  padding-top: 0 !important;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    padding-right:0px !important
+}
+
+.modal-content {
+  background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100vh;
+    height: 80vh;
+}
+.modal-body{
+  padding: 2rem;
+    background: #DADCD5;
+    border-radius: 1rem;
+}
+.modal-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #ffffff;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  align-items: center;
+}
+.modal-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid #ffffff;
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+
+.img-navbar-brand {
+  width: 10%;
 }
 .btn-flotante {
-	font-size: 16px; /* Cambiar el tamaño de la tipografia */
-	text-transform: uppercase; /* Texto en mayusculas */
-	font-weight: bold; /* Fuente en negrita o bold */
-	color: #ffffff; /* Color del texto */
-	border-radius: 5px; /* Borde del boton */
-	letter-spacing: 2px; /* Espacio entre letras */
-	position: fixed;
-	bottom: 40px;
-	right: 40px;
-	transition: all 300ms ease 0ms;
-	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-	z-index: 99999;
-	border-radius: 5rem;
+  font-size: 16px; /* Cambiar el tamaño de la tipografia */
+  text-transform: uppercase; /* Texto en mayusculas */
+  font-weight: bold; /* Fuente en negrita o bold */
+  color: #ffffff; /* Color del texto */
+  border-radius: 5px; /* Borde del boton */
+  letter-spacing: 2px; /* Espacio entre letras */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 99999;
+  border-radius: 5rem;
 }
 .btn-flotante:hover {
-	background-color:#ffc200; /* Color de fondo al pasar el cursor */
-	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
-	transform: translateY(-7px);
+  background-color: #ffc200; /* Color de fondo al pasar el cursor */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-7px);
 }
 body > a > img {
-    width: 100px;
-    height: auto;
+  width: 100px;
+  height: auto;
 }
-@media only screen and (max-width: 600px) {
- 	.btn-flotante {
-		font-size: 14px;
-		padding: 12px 20px;
-		bottom: 20px;
-		right: 20px;
-	}
-    .img-navbar-brand{
-        width:30%;
-    }
-    body > a > img {
-        width: 50px;
-        height: auto;
-    }
-} 
 
+
+@media only screen and (max-width: 600px) {
+  .btn-flotante {
+    font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .img-navbar-brand {
+    width: 30%;
+  }
+  body > a > img {
+    width: 50px;
+    height: auto;
+  }
+  #img-fluid {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  #mblhide {
+    display: none;
+  }
+  .modal-content {
+    background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 100%;
+      height:100%;
+  }
+  .full-screen {
+    padding: 2rem 0; 
+}
+}
 
 /* Formulario	 */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-*, *::before, ::after {
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+*,
+*::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
-.container{
-  z-index:99999;
+.container {
+  z-index: 99999;
 }
 .contenedor {
   max-width: 1170px;
   margin: 0 auto 1rem;
-  padding: 1.5rem;  
+  padding: 1.5rem;
 }
 .wrapper {
   box-shadow: 0 0 20px 0 rgba(69, 90, 100, 0.7);
@@ -73,11 +154,10 @@ body > a > img {
   list-style: none;
   text-align: center;
 }
-@media screen and (min-width: 700px) {
   .servicios {
     text-align: left;
   }
-}
+
 .logo {
   text-align: center;
   margin-bottom: 1rem;
@@ -90,6 +170,9 @@ body > a > img {
   text-align: center;
 }
 @media screen and (min-width: 700px) {
+  #mblshow {
+    display: none;
+  }
   .info-empresa h3 {
     text-align: left;
     margin-bottom: 0.5rem;
@@ -113,7 +196,9 @@ body > a > img {
 .formulario label {
   display: block;
 }
-.formulario button, .formulario input, .formulario textarea {
+.formulario button,
+.formulario input,
+.formulario textarea {
   width: 100%;
   padding: 1rem;
   border: 1px solid #ccd7dc;
@@ -132,19 +217,11 @@ body > a > img {
   font-weight: bold;
   cursor: pointer;
 }
-.boton-enviar:focus, .boton-enviar:hover {
+.boton-enviar:focus,
+.boton-enviar:hover {
   background-color: #455a64;
   color: #fff;
   outline: 0;
   transition: background-color 2s ease-out;
 }
 
-@media (max-width: 700px) {
-  #img-fluid {
-    max-width: 50%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-}
-}
-  

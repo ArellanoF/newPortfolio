@@ -84,6 +84,9 @@ body > a > img {
   width: 100px;
   height: auto;
 }
+li { 
+  list-style-type: circle;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -119,6 +122,9 @@ body > a > img {
   }
   .full-screen {
     padding: 2rem 0 !important; 
+}
+ul {
+  font-size: 14px;
 }
 }
 

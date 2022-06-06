@@ -85,7 +85,7 @@ body > a > img {
   height: auto;
 }
 li { 
-  list-style-type: circle;
+  list-style-type: circle !important;
 }
 
 
